@@ -1,0 +1,26 @@
+{
+    "$schema": "https://raw.githubusercontent.com/silverbulleters/vanessa-runner/develop/vanessa-runner-schema.json",
+    "default": {
+        "--ibconnection": "/SDEV1C09\\ERP_TORO_PRERELEASE",
+        "--db-user": "test",
+        "--db-pwd": "",
+        "--workspace": ".",
+        "--v8version":"8.3",
+        "--additional": "/TESTMANAGER /DisplayAllFunctions /Lru",
+        "--ordinaryapp": "-1"
+    },
+    "vanessa": {
+        "--vanessasettings": "./tools/JSON/VBParams8310UF.json",
+        "--pathvanessa": "./bddRunner.epf"
+    },
+    "xunit": {
+        "--ibconnection": "/SDEV1C09\\ERP_TORO_PRERELEASE",
+        "--db-user": "test",
+        "--db-pwd": "",
+        "--xddConfig": "./smoke.toro.json",
+        "testsPath": "./tests/smoke_toro_rules",
+        "--reportsxunit": "ГенераторОтчетаJUnitXML{build/junit.xml};ГенераторОтчетаAllureXMLВерсия2{build/allure_1.0.14.8/allure.xml}",
+        "--xddExitCodePath": "./build/xddExitCodePath.txt",
+        "--pathxunit": "./xddTestRunner v6_6_5.epf"
+    }
+}
